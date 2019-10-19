@@ -1,0 +1,569 @@
+/*@font-face {
+  font-family: 'Source Sans Pro';
+  font-display: auto;
+  src: local('Source Sans Pro'), url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+}*/
+
+
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	overflow-y: scroll;
+}
+body::-webkit-scrollbar { 
+    display: none; 
+}
+
+/* Add a black background color to the top navigation */
+.top-nav {
+  background-color: #666666;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.top-nav a {
+    float: left;
+    color: #ffffff;
+    text-align: center;
+    padding: 0.25rem .25rem;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: opacity 0.333s cubic-bezier(0, 0, 0.21, 1);
+    border-bottom: 2px solid #666666;
+}
+
+.top-nav a.last-child {
+  padding-left: 1rem;
+} 
+
+/* Change the color of links on hover */
+.top-nav a:hover {
+  border-bottom: 2px solid white;
+}
+/*.top-nav a.no-bottom:hover {
+  border-bottom: 1px solid white;
+}*/
+
+.top-nav a.txt-ic i{
+  background-color: transparent;
+  color: white;
+}
+
+.top-nav a.txt-ic {
+  border-bottom: 1px solid #ffffff;
+  padding-bottom: 0px;
+}
+.top-nav a.txt-bx {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.top-search:focus {
+  background-color: transparent;
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+.top-search::placeholder {
+  color: #efefef;
+}
+
+.top-nav a.no-bottom:hover {
+  border-bottom-color: #666666 !important;
+}
+
+/*.top-search:hover {
+  border-bottom-color: #666666 !important; 
+}*/
+
+/*.top-nav a .top-search:hover {
+  border-bottom: 1px solid transparent;
+}*/
+
+
+
+.top-nav .rt-most {
+  float: right;
+}
+
+/* Add a color to the active/current link */
+.top-nav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.top-search {
+    border: 0px solid #ffffff;
+    border-bottom-width: 1px;
+    background-color: transparent;
+    border-radius: 0;
+    font-size: 0.9rem;
+    padding: .15rem 0rem;
+    line-height: 1;
+    height: calc(0.8em + .5rem + 2px);
+    width: 100%;
+}
+
+#installApp {
+  border: none;
+  cursor: pointer;
+  height: 24px;
+  margin-right: 16px;
+  opacity: 0.54;
+  outline: none;
+  overflow: hidden;
+  text-indent: -30000px;
+  transition: opacity 0.333s cubic-bezier(0, 0, 0.21, 1);
+  width: 24px;
+  background: url(/images/install.svg) center center no-repeat;
+}
+
+.pic
+{
+     margin-top:1rem; 
+     width:4rem;
+     margin-left:1rem;
+     margin-bottom:-3rem;
+}
+
+.name {
+    position:absolute;
+    padding-left:6.5rem;
+    font-size:1rem;
+}
+.name1 {
+    position:absolute;
+    padding-left:6.5rem;
+    font-size:1rem;
+    margin-top: 1.8rem;
+}
+
+.name-details {
+    position:absolute;
+    padding-left:6.5rem;
+    font-size:16px;
+    margin-top: 1.8rem;
+}
+
+.dropdown
+{
+    position:absolute;
+}
+
+.change
+{
+ position:relative; 
+ bottom:20px;
+ padding:1px;
+ color:white;
+ text-decoration:none;
+}
+
+
+.change:hover
+{
+ text-decoration:none;
+ background-color:black;
+ color:white;
+}
+
+.panel-title {
+	text-align: left;
+	line-height: 0.5 !important;
+}
+
+.space1 {
+	margin-top: 4rem;
+}
+
+/* 
+#bg {
+	position:fixed; 
+	top:-50%; 
+	left:-50%; 
+	width:200%; 
+	height:200%;
+}
+#bg img {
+	position:absolute; 
+	top:0; 
+	left:0; 
+	right:0; 
+	bottom:0; 
+	margin:auto; 
+	min-width:50%;
+	min-height:50%;
+	opacity: 0.1;
+} */
+
+.page-wrap { 
+	position: relative; 
+	z-index: 2;
+	/*width: 400px; 
+	margin: 50px auto; 
+	padding: 20px; 
+	background: white; 
+	-moz-box-shadow: 0 0 20px black; 
+	-webkit-box-shadow: 0 0 20px black; 
+	box-shadow: 0 0 20px black; */
+}
+
+
+.card-custom {
+	/*
+	background: #56CCF2;  /* fallback for old browsers *
+	background: -webkit-linear-gradient(to left, #2F80ED, #56CCF2);  /* Chrome 10-25, Safari 5.1-6 *
+	background: linear-gradient(to left, #2F80ED, #56CCF2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ *
+	*/
+  /* background-color: #40BDF2; */
+  background-color: #51e45585;
+	border: 0;
+  /*background-image: url(../images/blue-tri.svg);
+  background-position: center;  Center the image 
+  background-repeat: no-repeat;
+  background-size: cover;*/
+}
+
+.info-box {
+
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    -webkit-transition: all .6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all .6s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+    background-color: #fff;
+    height: 5rem;
+    display: flex;
+    cursor: default;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #f5f5f5;
+    margin-bottom: 30px;
+}
+
+.info-box .content {
+    display: inline-block;
+    padding: 7px 16px;
+}
+
+.info-box .content .text {
+    margin: 5px 0;
+    color: #424242;
+    font-size: 12px;
+}
+
+.info-box .content .number {
+    font-weight: 400;
+    margin-top: 0px;
+    color: #424242;
+    font-size: 20px;
+}
+
+.info-box .icon {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    font-size: 2rem;
+}
+
+.info-box:hover {
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  -webkit-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
+}
+
+.badge-notify{
+   background: #40BDF2;
+   position:relative;
+   top: -20px;
+   left: -35px;
+}
+
+.badge-custom {
+  background-color: #40BDF2 !important;
+  cursor: pointer;
+}
+
+
+.color-primary {
+	color: #40BDF2;
+}
+
+.color-blue {
+	color: #457FCA;
+}
+
+.color-green {
+	color: #7DBB47;
+}
+
+.color-pink {
+	color: #F05E79;
+}
+
+.color-teal {
+	color: #3E9C94;
+}
+
+.btn-outline-custom {
+	border: 1px solid #40BDF2;
+	color: #40BDF2;
+}
+
+.btn-outline-custom:hover {
+	color: #fff;
+    background-color: #40BDF2;
+    border-color: #40BDF2;
+}
+
+.btn-group-xs > .btn, .btn-xs {
+  /*padding: .25rem .4rem;*/
+  padding: .5rem .5rem;
+  font-size: .875rem;
+  line-height: .5;
+  border-radius: .2rem;
+  font-weight: 600;
+}
+
+#patientData {
+	line-height: 1rem !important;
+}
+
+.tableContainer {
+	overflow-x: auto;
+}
+
+.table-nonfluid {
+   width: auto !important;
+}
+
+
+.table-nonvisited, .table-nonvisited>td, .table-nonvisited>th {
+  background-color: transparent !important;
+  color: #c62828;
+}
+
+.table-visited, .table-visited>td, .table-visited>th {
+  background-color: transparent !important;
+  color: #2E7D32;
+}
+
+
+/*------------------------------------------------------------------------------------------*/
+/*fc-event-inner {
+  background-color: #40BDF2;
+}*/
+/*-------------------------------------------------------------------------------------------*/
+
+@media
+    only screen 
+    and (max-width: 760px), (min-device-width: 768px) 
+    and (max-device-width: 1024px)  { 
+
+     .top-nav a {
+      font-size: 0.7rem !important;
+     }
+
+     .badge-custom {
+      font-size: 0.5rem !important;
+    }
+
+     .space1 {
+      margin-top: 5rem;
+     }
+
+     .collection-card {
+        margin: 0.1rem;
+        width: 23%;
+        display: inline-block !important;
+     }
+     .collection-card .stripe {
+      bottom: 0rem;
+      padding: 0.1rem !important;
+      font-size: 0.4rem !important;
+    }
+
+    .collection-card .stripe a p {
+        letter-spacing: .05rem !important;
+    }
+
+     #top-nav-bar {
+        display: none;
+     }
+     
+     .btn-group-xs > .btn, .btn-xs {
+        font-size: 0.5rem;
+        width: 3.3rem;
+     }
+
+     .desktop-part {
+      display: none !important;
+     }
+
+     .mobile-part {
+      display: block !important;
+     }
+
+     .ptd{ 
+       font-size: 0.65rem !important;
+     }
+
+    .custom-card .ptd {
+      flex: 0 0 15% !important;
+    }
+    .custom-card-info .ptd {
+      flex: 0 0 33% !important;
+    }
+
+    [class*="ptd-"]:before {
+      font-size: 0.45rem !important;
+    }
+
+
+}
+
+.mobile-part {
+  display: none;
+ }
+
+.collection-card .stripe {
+  padding: 0.3rem;
+  font-size: 1.3rem;
+  bottom: 0rem;
+}
+
+.collection-card .stripe a p {
+    letter-spacing: .05rem;
+}
+
+.space-mid {  
+  margin-top: 1rem;
+}
+
+
+.div-details {
+  display: none;
+}
+
+
+/*---------------------------------------------------------*/
+.ptd-action > .btn.blue-gradient {
+  float: right;
+  border-radius: 5rem;
+}
+.ptd-action > .btn.peach-gradient {
+  float: left;
+  border-radius: 5rem;
+}
+
+
+.section * {
+  transition: all 0.3s ease 0s;
+}
+/*-----------------------------------*/
+
+.custom-card, .custom-card-info {
+  margin-bottom: 0.5rem;
+  border-radius: 5px;
+}
+
+.custom-card-body {
+  padding: 0.5rem;
+}
+
+.card-inner-body {
+  text-align: left;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.custom-card .ptd {
+  padding: 0.5rem;
+  text-align: left;
+  flex: 0 0 15%;
+  /*display: inline-block;*/
+}
+
+.custom-card .ptd-name {
+  flex: 0 0 25%;
+}
+
+/*-----------------------------------*/
+
+/*.custom-card-info {
+  display: none;
+}*/
+
+.custom-card-info .ptd {
+  padding: 0.5rem;
+  text-align: left;
+  flex: 0 0 19%;
+}
+
+.custom-card-info .ptd-action {
+  float: center;
+}
+
+
+
+/*----------------------------------*/
+.ptd {
+  font-size: 1rem;
+}
+
+[class*="ptd-"]:before {
+  display: block;
+  font-size: 0.7rem;
+  text-align: left;
+  text-decoration-style: italic;
+  color: #878787;
+}
+.ptd-mrn:before { content : "MRN"; }
+.ptd-name:before { content : "Name"; }
+.ptd-gender:before { content : "Gender"; }
+.ptd-age:before { content : "Age"; }
+.ptd-visit-no:before { content : "Visit No"; }
+.ptd-visit-type:before { content : "Status"; }
+.ptd-blood:before { content : "Blood Group"; }
+.ptd-phone:before { content : "Phone"; }
+.ptd-location:before { content : "Location"; }
+.ptd-consultant:before { content : "Consultant"; }
+.ptd-current-visit:before { content : "Current Visit"; }
+.ptd-last-visit:before { content : "Last Visit"; }
+.ptd-visit-no:before { content : "Visit No"; }
+.ptd-admitted-on:before { content : "Admitted On"; }
+.ptd-patient-condition:before { content : "Patient Condition"; }
+.ptd-insurance-name:before { content : "Insurance Name"; }
+.ptd-eligibility:before { content : "Eligibility"; }
+.ptd-policy-no:before { content : "Policy Number"; }
+.ptd-approval-status:before { content : "Approval Status"; }
+.ptd-priority:before { content : "Priority"; }
+.ptd-reason:before { content : "Reason"; }
+.ptd-from-department:before { content : "From Department"; }
+.ptd-from-consultant:before { content : "From Consultant"; }
+.ptd-to-department:before { content : "To Department"; }
+.ptd-to-consultant:before { content : "To Consultant"; }
+.ptd-requested-date:before { content : "Requested Date"; }
+
+
+.btn-floating {
+    width: 1rem;
+    height: 1rem;
+    float: right;
+}
+
+.red-gradient {
+    background: linear-gradient(160deg,#f9cccc,#ff0000)!important;
+}
+
+.green-gradient {
+    background: linear-gradient(160deg,#a8c3a9,#00ff00)!important;
+}
+
+.card-flip-parent:hover {
+  -webkit-transform: scale(1.1, 1.1);
+   transform: scale(1.1, 1.1);
+}
